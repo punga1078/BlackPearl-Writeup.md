@@ -40,15 +40,6 @@ Además se tuvo que tener en cuenta que se presentaron problemas:
 
 El análisis de la máquina Black Pearl no solo permitió poner en práctica herramientas y técnicas de ciberseguridad, sino que también evidenció la importancia de comprender cada etapa del proceso, desde la configuración del entorno hasta la interpretación de resultados. Más allá de las vulnerabilidades identificadas, este ejercicio reforzó la necesidad de mantener una mirada crítica y metódica al trabajar con sistemas reales, donde incluso detalles aparentemente menores como la configuración de red o versiones de software pueden cambiar completamente el curso de una investigación.
 
-## Recomendaciones
-
-El equipo de ciberseguridad recomienda tomar las siguientes acciones para mantener la integridad del sistema:
-
-* Actualizar el CMS Navigate a su versión más reciente o reemplazarlo por un sistema mantenido.
-* Restringir el acceso a los servicios web mediante autenticación y control de IP.
-* Mantener actualizado el sistema operativo y los componentes PHP.
-* Implementar un firewall de aplicaciones web (WAF) para prevenir ataques similares.
-* Deshabilitar el acceso público al archivo `phpinfo()`, que revela información sensible.
 
 
 ---
